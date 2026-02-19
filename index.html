@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kamakinya Farm Machinery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Kamakinya Farm Machinery Hiring</h1>
+        <p>Hire and Return Farm Equipment Easily</p>
+    </header>
+
+    <section class="machines">
+        <h2>Available Machinery</h2>
+        <div class="machine-list">
+            <div class="machine">
+                <h3>Tractor</h3>
+                <img src="c:\Users\USER\OneDrive\Desktop\kamakinya-farm-machiney\images\Tractor.jpg.png" alt="Tractor">
+                <p>Status: <span id="tractor-status">Available</span></p>
+                <button onclick="hireMachine('tractor')">Hire</button>
+                <button onclick="returnMachine('tractor')">Return</button>
+            </div>
+
+            <div class="machine">
+                <h3>Plough</h3>
+                <img src="c:\Users\USER\OneDrive\Desktop\kamakinya-farm-machiney\images\Plough.jpg.jpg" alt="Plough">
+                <p>Status: <span id="plough-status">Available</span></p>
+                <button onclick="hireMachine('plough')">Hire</button>
+                <button onclick="returnMachine('plough')">Return</button>
+            </div>
+
+            <div class="machine">
+                <h3>Harvester</h3>
+                <img src="c:\Users\USER\OneDrive\Desktop\kamakinya-farm-machiney\images\Harvester.jpg.jpg" alt="Harvester">
+                <p>Status: <span id="harvester-status">Available</span></p>
+                <button onclick="hireMachine('harvester')">Hire</button>
+                <button onclick="returnMachine('harvester')">Return</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <h2>Customer Details</h2>
+        <form id="hireForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Phone Number" required>
+            <input type="date" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
